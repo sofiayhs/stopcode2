@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.bg-amount{
+    background-color: rgb(255, 255, 0);
+    border-radius: 5px;
+}
+
+.bg-invoice{
+    background-color: rgba(100, 165, 100, 0.808);
+}
+
+.bg-withdrawal{
+    background-color: rgb(185, 178, 178);
+}
+
+.container{
+    display: grid;
+    margin:3em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px ;
+    gap: 2em;
+}
+
+h3{
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.liste-transazioni{
+    list-style: none;
+    line-height: 2em;
+    padding:5px;
+    margin:0;
+    height:100%;
+    border-radius: 1em;
+    border:1px solid rgb(187, 183, 183); 
+}

@@ -1,0 +1,8 @@
+<ul class="liste-transazioni" *ngIf="elemento" [ngClass]="{'bg-invoice': elemento.type == 'invoice', 'bg-withdrawal': elemento.type == 'withdrawal'}">
+    <h3><li>{{elemento.business}}</li></h3>
+    <li>Name: {{elemento.name}}</li>
+    <li>Account: {{elemento.account}}</li>
+    <li>Type: <b>{{elemento.type}}</b></li>
+    <li [ngClass]="{'bg-amount': elemento.amount > 700 }" >Amount: <b>{{elemento.amount |currency}}</b> </li>
+    <li>Date: {{elemento.date | date:'MMM d, yyyy'}}</li>
+</ul>
